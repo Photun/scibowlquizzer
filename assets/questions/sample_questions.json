@@ -1,0 +1,29 @@
+[
+  {
+    "id": "sample-physics-1",
+    "category": "Physics",
+    "type": "multipleChoice",
+    "difficulty": "practice",
+    "question": "Which quantity is equal to force multiplied by distance in the direction of motion?",
+    "answer": "Work",
+    "choices": ["Power", "Work", "Momentum", "Impulse"]
+  },
+  {
+    "id": "sample-chemistry-1",
+    "category": "Chemistry",
+    "type": "shortAnswer",
+    "difficulty": "practice",
+    "question": "What is the common name for NaCl?",
+    "answer": "Table salt",
+    "choices": []
+  },
+  {
+    "id": "sample-biology-1",
+    "category": "Biology",
+    "type": "multipleChoice",
+    "difficulty": "practice",
+    "question": "Which organelle is the primary site of ATP production in eukaryotic cells?",
+    "answer": "Mitochondrion",
+    "choices": ["Nucleus", "Ribosome", "Mitochondrion", "Golgi apparatus"]
+  }
+]
