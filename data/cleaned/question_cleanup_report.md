@@ -1,0 +1,320 @@
+# Question Cleanup Report
+
+- Total questions: 5022
+- Questions changed by cleanup: 298
+- Questions still marked for review: 2
+
+## Still Needs Review
+
+### q-0986 (Math set 3 #12)
+
+- Notes: normalized math/text formatting
+- Question: Remove all negative exponents and simplify the following expression: x x y z 4 4 0 -3 4
+- Answer: 3 4 xy z (ACCEPT: y x z 3 4 )
+
+### q-0996 (Math set 3 #12)
+
+- Notes: unresolved suspicious formatting
+- Question: Order the following 4 radicals from the smallest to the largest: 3 2 ; 3 2 ; 3 ; 2
+- Answer: 3 2 ; 2 ; 3 ; 3 2
+
+## Changed Questions
+
+- q-0005 (General Science set 1 #1): normalized math/text formatting
+- q-0009 (Math set 1 #1): normalized math/text formatting
+- q-0075 (Physical Science set 1 #3): normalized math/text formatting
+- q-0086 (Math set 1 #4): normalized math/text formatting
+- q-0096 (Math set 1 #4): normalized math/text formatting
+- q-0105 (Math set 1 #5): normalized math/text formatting
+- q-0110 (Math set 1 #5): normalized math/text formatting
+- q-0158 (Math set 1 #7): normalized math/text formatting
+- q-0173 (Math set 1 #7): normalized math/text formatting
+- q-0182 (Math set 1 #8): normalized math/text formatting
+- q-0192 (Math set 1 #8): normalized math/text formatting
+- q-0206 (Math set 1 #9): normalized math/text formatting
+- q-0216 (Math set 1 #9): normalized math/text formatting
+- q-0219 (Physical Science set 1 #9): normalized math/text formatting
+- q-0230 (Math set 1 #10): normalized math/text formatting
+- q-0260 (Math set 1 #11): normalized math/text formatting
+- q-0262 (Physical Science set 1 #11): normalized math/text formatting
+- q-0269 (Math set 1 #11): normalized math/text formatting
+- q-0278 (Math set 1 #12): normalized math/text formatting
+- q-0279 (General Science set 1 #12): normalized math/text formatting
+- q-0326 (Math set 1 #14): normalized math/text formatting
+- q-0329 (Physical Science set 1 #14): normalized math/text formatting
+- q-0356 (Math set 1 #15): manual prompt repair, normalized math/text formatting
+- q-0392 (Physical Science set 1 #16): normalized math/text formatting
+- q-0393 (Earth Science set 1 #16): normalized math/text formatting
+- q-0414 (Math set 1 #17): normalized math/text formatting
+- q-0422 (Earth Science set 1 #17): normalized math/text formatting
+- q-0427 (Math set 1 #18): normalized math/text formatting
+- q-0447 (Math set 1 #18): normalized math/text formatting
+- q-0473 (General Science set 2 #1): normalized math/text formatting
+- q-0498 (General Science set 2 #2): normalized math/text formatting
+- q-0637 (General Science set 2 #8): normalized math/text formatting
+- q-0678 (Math set 2 #10): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-0724 (Math set 3 #1): normalized math/text formatting
+- q-0733 (Math set 3 #2): normalized math/text formatting
+- q-0739 (General Science set 3 #2): normalized math/text formatting
+- q-0751 (Earth Science set 3 #3): normalized math/text formatting
+- q-0777 (General Science set 3 #4): normalized math/text formatting
+- q-0781 (Math set 3 #4): normalized math/text formatting
+- q-0806 (General Science set 3 #5): normalized math/text formatting
+- q-0820 (Math set 3 #5): normalized math/text formatting
+- q-0825 (Math set 3 #5): normalized math/text formatting
+- q-0829 (Math set 3 #6): normalized math/text formatting
+- q-0839 (Math set 3 #6): normalized math/text formatting
+- q-0853 (Math set 3 #7): manual answer repair, normalized math/text formatting
+- q-0854 (General Science set 3 #7): normalized math/text formatting
+- q-0861 (Physical Science set 3 #7): normalized math/text formatting
+- q-0868 (Math set 3 #7): normalized math/text formatting
+- q-0890 (Math set 3 #8): normalized math/text formatting
+- q-0909 (Math set 3 #9): normalized math/text formatting
+- q-0933 (Math set 3 #10): normalized math/text formatting
+- q-0936 (Physical Science set 3 #10): normalized math/text formatting
+- q-0948 (Math set 3 #10): manual answer repair, normalized math/text formatting
+- q-0952 (Math set 3 #11): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-0962 (Math set 3 #11): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-0967 (Math set 3 #11): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-0972 (Math set 3 #11): manual prompt repair, normalized math/text formatting
+- q-0986 (Math set 3 #12): normalized math/text formatting
+- q-1010 (Math set 3 #13): manual prompt repair, normalized math/text formatting
+- q-1015 (Math set 3 #13): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1025 (Math set 3 #13): manual prompt repair, normalized math/text formatting
+- q-1029 (Math set 3 #14): normalized math/text formatting
+- q-1034 (Math set 3 #14): normalized math/text formatting
+- q-1039 (Math set 3 #14): manual prompt repair, normalized math/text formatting
+- q-1049 (Math set 3 #14): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1053 (Math set 3 #15): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1058 (Math set 3 #15): normalized math/text formatting
+- q-1063 (Math set 3 #15): normalized math/text formatting
+- q-1068 (Math set 3 #15): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1113 (Math set 4 #2): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1140 (Math set 4 #3): manual prompt repair, normalized math/text formatting
+- q-1171 (Energy set 4 #4): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1180 (Math set 4 #5): normalized math/text formatting
+- q-1187 (General Science set 4 #5): manual answer repair, normalized math/text formatting
+- q-1202 (Math set 4 #6): manual prompt repair, normalized math/text formatting
+- q-1221 (Math set 4 #6): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1235 (Math set 4 #7): normalized math/text formatting
+- q-1245 (Math set 4 #7): manual prompt repair, normalized math/text formatting
+- q-1255 (Math set 4 #8): manual answer repair, normalized math/text formatting
+- q-1329 (Math set 4 #11): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1366 (Math set 4 #12): manual prompt repair, normalized math/text formatting
+- q-1370 (Math set 4 #12): normalized math/text formatting
+- q-1374 (Math set 4 #12): normalized math/text formatting
+- q-1383 (Math set 4 #13): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1386 (Math set 4 #13): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1390 (Math set 4 #13): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1403 (Math set 4 #14): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1414 (Math set 4 #14): normalized math/text formatting
+- q-1425 (Math set 4 #14): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1464 (Math set 4 #16): manual prompt repair, normalized math/text formatting
+- q-1467 (Math set 4 #16): manual prompt repair, normalized math/text formatting
+- q-1498 (Math set 4 #17): manual prompt repair, normalized math/text formatting
+- q-1520 (Math set 5 #1): manual prompt repair, normalized math/text formatting
+- q-1530 (Math set 5 #2): manual prompt repair, normalized math/text formatting
+- q-1600 (Math set 5 #5): manual prompt repair, normalized math/text formatting
+- q-1605 (Math set 5 #5): normalized math/text formatting
+- q-1645 (Math set 5 #6): manual prompt repair, normalized math/text formatting
+- q-1655 (Math set 5 #7): manual prompt repair, normalized math/text formatting
+- q-1674 (Math set 5 #7): normalized math/text formatting
+- q-1686 (Math set 5 #8): normalized math/text formatting
+- q-1701 (Math set 5 #9): normalized math/text formatting
+- q-1715 (Math set 5 #9): manual prompt repair, normalized math/text formatting
+- q-1735 (Math set 5 #10): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1760 (Math set 5 #11): normalized math/text formatting
+- q-1764 (Math set 5 #11): normalized math/text formatting
+- q-1796 (Math set 5 #12): manual prompt repair, normalized math/text formatting
+- q-1802 (Energy set 5 #13): normalized math/text formatting
+- q-1834 (Math set 5 #14): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-1840 (Math set 5 #14): normalized math/text formatting
+- q-1860 (Math set 5 #15): normalized math/text formatting
+- q-1866 (Math set 5 #15): normalized math/text formatting
+- q-1880 (Math set 5 #16): manual prompt repair, normalized math/text formatting
+- q-1886 (Math set 5 #16): normalized math/text formatting
+- q-1901 (Math set 6 #1): normalized math/text formatting
+- q-1915 (Math set 6 #1): normalized math/text formatting
+- q-1928 (Math set 6 #2): manual prompt repair, normalized math/text formatting
+- q-1960 (Math set 6 #3): normalized math/text formatting
+- q-1968 (Math set 6 #3): manual prompt repair, normalized math/text formatting
+- q-2009 (Math set 6 #5): normalized math/text formatting
+- q-2015 (Math set 6 #5): manual prompt repair, normalized math/text formatting
+- q-2021 (Math set 6 #5): manual prompt repair, normalized math/text formatting
+- q-2040 (Math set 6 #6): manual prompt repair, normalized math/text formatting
+- q-2076 (Math set 6 #8): manual prompt repair, normalized math/text formatting
+- q-2086 (Math set 6 #8): normalized math/text formatting
+- q-2103 (Math set 6 #9): manual prompt repair, normalized math/text formatting
+- q-2109 (Math set 6 #9): manual prompt repair, normalized math/text formatting
+- q-2160 (Math set 6 #11): manual prompt repair, normalized math/text formatting
+- q-2178 (Energy set 6 #12): normalized math/text formatting
+- q-2186 (Math set 6 #12): manual prompt repair, normalized math/text formatting
+- q-2198 (Math set 6 #12): normalized math/text formatting
+- q-2221 (Math set 6 #13): normalized math/text formatting
+- q-2228 (Math set 6 #14): manual prompt repair, normalized math/text formatting
+- q-2240 (Math set 6 #14): manual prompt repair, normalized math/text formatting
+- q-2260 (Math set 6 #15): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-2275 (Math set 6 #16): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-2294 (Math set 6 #16): manual answer repair, normalized math/text formatting
+- q-2303 (Math set 6 #17): normalized math/text formatting
+- q-2321 (Math set 6 #17): manual answer repair, normalized math/text formatting
+- q-2323 (Math set 6 #17): manual prompt repair, normalized math/text formatting
+- q-2327 (Math set 7 #1): normalized math/text formatting
+- q-2380 (Energy set 7 #3): manual prompt repair, normalized math/text formatting
+- q-2387 (Math set 7 #3): manual prompt repair, normalized math/text formatting
+- q-2408 (Math set 7 #4): normalized math/text formatting
+- q-2426 (Math set 7 #5): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-2432 (Math set 7 #5): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-2481 (Math set 7 #7): manual prompt repair, normalized math/text formatting
+- q-2487 (Math set 7 #7): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-2520 (Math set 7 #8): normalized math/text formatting
+- q-2533 (Math set 7 #9): manual prompt repair, normalized math/text formatting
+- q-2539 (Math set 7 #9): manual prompt repair, normalized math/text formatting
+- q-2545 (Math set 7 #9): normalized math/text formatting
+- q-2554 (Math set 7 #10): normalized math/text formatting
+- q-2581 (Math set 7 #11): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-2589 (Math set 7 #11): normalized math/text formatting
+- q-2593 (Math set 7 #11): manual prompt repair, normalized math/text formatting
+- q-2615 (Math set 7 #12): normalized math/text formatting
+- q-2620 (Math set 7 #12): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-2626 (Math set 7 #13): normalized math/text formatting
+- q-2644 (Math set 7 #13): manual prompt repair, normalized math/text formatting
+- q-2664 (Math set 7 #14): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-2690 (Math set 7 #15): normalized math/text formatting
+- q-2712 (Math set 8 #1): normalized math/text formatting
+- q-2766 (Math set 8 #3): normalized math/text formatting
+- q-2778 (Math set 8 #4): normalized math/text formatting
+- q-2821 (Math set 8 #6): normalized math/text formatting
+- q-2827 (Math set 8 #6): manual prompt repair, normalized math/text formatting
+- q-2860 (Math set 8 #7): normalized math/text formatting
+- q-2893 (Math set 8 #9): normalized math/text formatting
+- q-2924 (Math set 8 #10): normalized math/text formatting
+- q-2936 (Math set 8 #11): normalized math/text formatting
+- q-2958 (Math set 8 #12): manual prompt repair, normalized math/text formatting
+- q-2963 (Math set 8 #12): manual prompt repair, normalized math/text formatting
+- q-3013 (Math set 8 #14): manual prompt repair, normalized math/text formatting
+- q-3110 (Math set 9 #2): manual prompt repair, normalized math/text formatting
+- q-3137 (Math set 9 #4): manual answer repair, normalized math/text formatting
+- q-3152 (Math set 9 #4): manual prompt repair, normalized math/text formatting
+- q-3204 (General Science set 9 #6): normalized math/text formatting
+- q-3222 (Math set 9 #7): manual prompt repair, normalized math/text formatting
+- q-3224 (Math set 9 #7): normalized math/text formatting
+- q-3253 (Math set 9 #9): normalized math/text formatting
+- q-3300 (Math set 9 #11): normalized math/text formatting
+- q-3323 (Math set 9 #12): normalized math/text formatting
+- q-3335 (Math set 9 #12): manual prompt repair, normalized math/text formatting
+- q-3352 (Math set 9 #13): manual prompt repair, normalized math/text formatting
+- q-3432 (Math set 9 #16): manual prompt repair, normalized math/text formatting
+- q-3454 (Math set 9 #17): manual prompt repair, normalized math/text formatting
+- q-3459 (Math set 10 #1): manual answer repair, normalized math/text formatting
+- q-3521 (Math set 10 #3): normalized math/text formatting
+- q-3523 (Math set 10 #3): manual prompt repair, normalized math/text formatting
+- q-3530 (Math set 10 #4): normalized math/text formatting
+- q-3537 (Math set 10 #4): manual prompt repair, normalized math/text formatting
+- q-3592 (Math set 10 #6): manual prompt repair, normalized math/text formatting
+- q-3609 (Math set 10 #7): normalized math/text formatting
+- q-3642 (Math set 10 #8): normalized math/text formatting
+- q-3686 (Math set 10 #10): manual prompt repair, normalized math/text formatting
+- q-3725 (Math set 10 #12): normalized math/text formatting
+- q-3732 (Math set 10 #12): manual prompt repair, normalized math/text formatting
+- q-3735 (Math set 10 #13): normalized math/text formatting
+- q-3744 (Math set 10 #13): manual prompt repair, normalized math/text formatting
+- q-3760 (Math set 10 #14): normalized math/text formatting
+- q-3766 (Math set 10 #14): normalized math/text formatting
+- q-3774 (Math set 10 #14): normalized math/text formatting
+- q-3794 (Math set 10 #15): manual answer repair, normalized math/text formatting
+- q-3826 (Math set 10 #16): normalized math/text formatting
+- q-3840 (Math set 10 #17): normalized math/text formatting
+- q-3856 (Math set 11 #1): normalized math/text formatting
+- q-3860 (Math set 11 #1): normalized math/text formatting
+- q-3889 (Math set 11 #2): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-3905 (Math set 11 #3): manual prompt repair, normalized math/text formatting
+- q-3920 (Math set 11 #4): normalized math/text formatting
+- q-3925 (Math set 11 #4): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-3948 (Math set 11 #5): manual answer repair, normalized math/text formatting
+- q-3964 (Math set 11 #5): normalized math/text formatting
+- q-3981 (Math set 11 #6): normalized math/text formatting
+- q-3992 (Math set 11 #7): normalized math/text formatting
+- q-4004 (Math set 11 #7): manual prompt repair, normalized math/text formatting
+- q-4020 (Math set 11 #8): normalized math/text formatting
+- q-4045 (Math set 11 #9): normalized math/text formatting
+- q-4051 (Math set 11 #9): normalized math/text formatting
+- q-4087 (Math set 11 #11): normalized math/text formatting
+- q-4095 (Math set 11 #11): normalized math/text formatting
+- q-4101 (Math set 11 #11): normalized math/text formatting
+- q-4146 (Math set 11 #13): manual prompt repair, normalized math/text formatting
+- q-4177 (Math set 11 #15): normalized math/text formatting
+- q-4181 (Math set 11 #15): manual prompt repair, normalized math/text formatting
+- q-4196 (Math set 11 #16): normalized math/text formatting
+- q-4203 (Math set 11 #16): normalized math/text formatting
+- q-4214 (Math set 11 #16): normalized math/text formatting
+- q-4230 (Math set 11 #17): normalized math/text formatting
+- q-4236 (Math set 11 #17): normalized math/text formatting
+- q-4275 (Math set 12 #2): normalized math/text formatting
+- q-4283 (Math set 12 #2): manual prompt repair, normalized math/text formatting
+- q-4297 (Math set 12 #3): normalized math/text formatting
+- q-4302 (Math set 12 #3): manual answer repair, normalized math/text formatting
+- q-4325 (Math set 12 #4): normalized math/text formatting
+- q-4335 (Math set 12 #5): normalized math/text formatting
+- q-4349 (Math set 12 #5): normalized math/text formatting
+- q-4353 (Math set 12 #5): manual prompt repair, normalized math/text formatting
+- q-4357 (Math set 12 #6): normalized math/text formatting
+- q-4373 (Math set 12 #6): normalized math/text formatting
+- q-4385 (Math set 12 #7): manual prompt repair, normalized math/text formatting
+- q-4394 (Math set 12 #7): normalized math/text formatting
+- q-4409 (Math set 12 #8): normalized math/text formatting
+- q-4443 (Math set 12 #9): manual prompt repair, normalized math/text formatting
+- q-4451 (Math set 12 #10): normalized math/text formatting
+- q-4464 (Math set 12 #10): normalized math/text formatting
+- q-4468 (Math set 12 #10): manual prompt repair, normalized math/text formatting
+- q-4478 (Math set 12 #11): normalized math/text formatting
+- q-4481 (Math set 12 #11): normalized math/text formatting
+- q-4510 (Math set 12 #12): normalized math/text formatting
+- q-4513 (Math set 12 #12): normalized math/text formatting
+- q-4517 (Math set 12 #13): normalized math/text formatting
+- q-4524 (Math set 12 #13): normalized math/text formatting
+- q-4542 (Math set 12 #14): normalized math/text formatting
+- q-4568 (Math set 12 #15): manual prompt repair, normalized math/text formatting
+- q-4582 (Math set 12 #15): manual prompt repair, normalized math/text formatting
+- q-4603 (Math set 12 #16): normalized math/text formatting
+- q-4610 (Math set 12 #17): normalized math/text formatting
+- q-4615 (Math set 12 #17): manual prompt repair, normalized math/text formatting
+- q-4620 (Math set 12 #17): normalized math/text formatting
+- q-4634 (Math set 13 #1): normalized math/text formatting
+- q-4643 (Physical Science set 13 #1): normalized math/text formatting
+- q-4678 (Math set 13 #3): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-4693 (Math set 13 #3): normalized math/text formatting
+- q-4696 (Math set 13 #3): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-4711 (Math set 13 #4): normalized math/text formatting
+- q-4723 (Math set 13 #4): normalized math/text formatting
+- q-4732 (Math set 13 #5): manual answer repair, manual prompt repair, normalized math/text formatting
+- q-4740 (Math set 13 #5): manual prompt repair, normalized math/text formatting
+- q-4744 (Math set 13 #5): normalized math/text formatting
+- q-4764 (Math set 13 #6): normalized math/text formatting
+- q-4767 (Math set 13 #6): normalized math/text formatting
+- q-4776 (Math set 13 #7): normalized math/text formatting
+- q-4785 (Math set 13 #7): manual answer repair, normalized math/text formatting
+- q-4800 (Math set 13 #8): normalized math/text formatting
+- q-4811 (Math set 13 #8): normalized math/text formatting
+- q-4817 (Math set 13 #9): normalized math/text formatting
+- q-4822 (Math set 13 #9): normalized math/text formatting
+- q-4834 (Math set 13 #9): normalized math/text formatting
+- q-4846 (Math set 13 #10): normalized math/text formatting
+- q-4859 (Math set 13 #10): manual prompt repair, normalized math/text formatting
+- q-4863 (Math set 13 #11): normalized math/text formatting
+- q-4872 (Math set 13 #11): manual prompt repair, normalized math/text formatting
+- q-4880 (Math set 13 #11): normalized math/text formatting
+- q-4898 (Math set 13 #12): normalized math/text formatting
+- q-4901 (Math set 13 #12): manual prompt repair, normalized math/text formatting
+- q-4908 (Math set 13 #13): normalized math/text formatting
+- q-4944 (Life Science set 13 #14): normalized math/text formatting
+- q-4952 (Math set 13 #14): manual prompt repair, normalized math/text formatting
+- q-4967 (Math set 13 #15): normalized math/text formatting
+- q-4973 (Math set 13 #15): manual prompt repair, normalized math/text formatting
+- q-4989 (Math set 13 #16): normalized math/text formatting
+- q-4997 (Math set 13 #16): normalized math/text formatting
+- q-5001 (Math set 13 #17): manual prompt repair, normalized math/text formatting
+- q-5005 (Energy set 13 #17): manual answer repair, normalized math/text formatting
+- q-5011 (Math set 13 #17): normalized math/text formatting
+- q-5014 (Math set 13 #17): normalized math/text formatting
+- q-5018 (Math set 13 #17): normalized math/text formatting

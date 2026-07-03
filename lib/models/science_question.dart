@@ -41,6 +41,8 @@ class ScienceQuestion {
     required this.answer,
     required this.answerLabel,
     required this.choices,
+    required this.needsReview,
+    required this.cleanupNotes,
   });
 
   final String id;
@@ -52,6 +54,8 @@ class ScienceQuestion {
   final String answer;
   final String? answerLabel;
   final List<QuestionChoice> choices;
+  final bool needsReview;
+  final List<String> cleanupNotes;
 
   bool get hasChoices =>
       type == QuestionType.multipleChoice && choices.isNotEmpty;
@@ -71,6 +75,10 @@ class ScienceQuestion {
           .map(
             (choice) => QuestionChoice.fromJson(choice as Map<String, dynamic>),
           )
+          .toList(growable: false),
+      needsReview: json['needsReview'] as bool? ?? false,
+      cleanupNotes: (json['cleanupNotes'] as List<dynamic>? ?? const [])
+          .map((note) => note.toString())
           .toList(growable: false),
     );
   }

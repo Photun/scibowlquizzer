@@ -9,12 +9,20 @@ class QuestionLoader {
 
   final String assetPath;
 
-  Future<List<ScienceQuestion>> load() async {
+  Future<List<ScienceQuestion>> load({bool includeNeedsReview = false}) async {
     final rawJson = await rootBundle.loadString(assetPath);
     final decoded = jsonDecode(rawJson) as List<dynamic>;
 
-    return decoded
+    final questions = decoded
         .map((item) => ScienceQuestion.fromJson(item as Map<String, dynamic>))
+        .toList(growable: false);
+
+    if (includeNeedsReview) {
+      return questions;
+    }
+
+    return questions
+        .where((question) => !question.needsReview)
         .toList(growable: false);
   }
 }
