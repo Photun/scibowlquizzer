@@ -5,6 +5,18 @@ import 'package:flutter/material.dart';
 import '../models/science_question.dart';
 import '../services/question_loader.dart';
 
+const _appBackground = Color(0xFF071018);
+const _panel = Color(0xFF101A26);
+const _panelElevated = Color(0xFF142131);
+const _panelSoft = Color(0xFF182637);
+const _line = Color(0xFF26384A);
+const _textStrong = Color(0xFFF5F8FB);
+const _textMuted = Color(0xFFAAB8C6);
+const _accent = Color(0xFF2EE6A6);
+const _accentBlue = Color(0xFF6DA8FF);
+const _warning = Color(0xFFFFC857);
+const _danger = Color(0xFFFF6B6B);
+
 class PracticeScreen extends StatefulWidget {
   const PracticeScreen({super.key});
 
@@ -175,18 +187,38 @@ class _PracticeScreenState extends State<PracticeScreen> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: Image.asset(
-              'assets/images/science_texture.png',
-              fit: BoxFit.cover,
-              opacity: const AlwaysStoppedAnimation(0.22),
+            child: DecoratedBox(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color(0xFF071018),
+                    Color(0xFF0D1722),
+                    Color(0xFF09131D),
+                    Color(0xFF101827),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Positioned.fill(
+            child: ColorFiltered(
+              colorFilter: const ColorFilter.mode(
+                Color(0xFF071018),
+                BlendMode.multiply,
+              ),
+              child: Image.asset(
+                'assets/images/science_texture.png',
+                fit: BoxFit.cover,
+                opacity: const AlwaysStoppedAnimation(0.2),
+              ),
             ),
           ),
           Positioned.fill(
             child: DecoratedBox(
               decoration: BoxDecoration(
-                color: Theme.of(
-                  context,
-                ).colorScheme.surface.withValues(alpha: 0.86),
+                color: _appBackground.withValues(alpha: 0.72),
               ),
             ),
           ),
@@ -330,12 +362,16 @@ class _TopBar extends StatelessWidget {
           children: [
             DecoratedBox(
               decoration: BoxDecoration(
-                color: const Color(0xFF116466),
+                gradient: const LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [Color(0xFF2EE6A6), Color(0xFF2B7FFF)],
+                ),
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFF116466).withValues(alpha: 0.18),
-                    blurRadius: 18,
+                    color: _accent.withValues(alpha: 0.32),
+                    blurRadius: 28,
                     offset: const Offset(0, 8),
                   ),
                 ],
@@ -355,13 +391,14 @@ class _TopBar extends StatelessWidget {
                   style: theme.textTheme.headlineSmall?.copyWith(
                     fontWeight: FontWeight.w800,
                     letterSpacing: 0,
+                    color: _textStrong,
                   ),
                 ),
                 const SizedBox(height: 2),
                 Text(
                   '${_formatCount(totalCount)} questions ready',
                   style: theme.textTheme.bodyMedium?.copyWith(
-                    color: theme.colorScheme.onSurfaceVariant,
+                    color: _textMuted,
                   ),
                 ),
               ],
@@ -408,18 +445,28 @@ class _HeaderPill extends StatelessWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: theme.colorScheme.surface,
+        color: _panelElevated.withValues(alpha: 0.94),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: theme.colorScheme.outlineVariant),
+        border: Border.all(color: _line),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.2),
+            blurRadius: 18,
+            offset: const Offset(0, 8),
+          ),
+        ],
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, size: 18, color: theme.colorScheme.primary),
+            Icon(icon, size: 18, color: _accent),
             const SizedBox(width: 7),
-            Text(label, style: theme.textTheme.labelLarge),
+            Text(
+              label,
+              style: theme.textTheme.labelLarge?.copyWith(color: _textStrong),
+            ),
           ],
         ),
       ),
@@ -503,13 +550,13 @@ class _PracticeSummary extends StatelessWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: theme.colorScheme.surface.withValues(alpha: 0.96),
+        color: _panel.withValues(alpha: 0.94),
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: theme.colorScheme.outlineVariant),
+        border: Border.all(color: _line),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.05),
-            blurRadius: 24,
+            color: Colors.black.withValues(alpha: 0.35),
+            blurRadius: 30,
             offset: const Offset(0, 10),
           ),
         ],
@@ -531,13 +578,14 @@ class _PracticeSummary extends StatelessWidget {
                         '$correct correct',
                         style: theme.textTheme.titleLarge?.copyWith(
                           fontWeight: FontWeight.w800,
+                          color: _textStrong,
                         ),
                       ),
                       const SizedBox(height: 2),
                       Text(
                         '$attempted attempted',
                         style: theme.textTheme.bodyMedium?.copyWith(
-                          color: theme.colorScheme.onSurfaceVariant,
+                          color: _textMuted,
                         ),
                       ),
                     ],
@@ -597,14 +645,15 @@ class _AccuracyRing extends StatelessWidget {
               value: value,
               strokeWidth: 8,
               strokeCap: StrokeCap.round,
-              backgroundColor: theme.colorScheme.surfaceContainerHighest,
-              color: const Color(0xFF2A9D8F),
+              backgroundColor: _panelSoft,
+              color: _accent,
             ),
           ),
           Text(
             '$percent%',
             style: theme.textTheme.titleMedium?.copyWith(
               fontWeight: FontWeight.w800,
+              color: _textStrong,
             ),
           ),
         ],
@@ -632,23 +681,26 @@ class _MetricTile extends StatelessWidget {
       width: 86,
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: theme.colorScheme.surfaceContainerHighest.withValues(
-            alpha: 0.66,
-          ),
+          color: _panelSoft.withValues(alpha: 0.82),
           borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: _line.withValues(alpha: 0.8)),
         ),
         child: Padding(
           padding: const EdgeInsets.all(10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Icon(icon, size: 18, color: theme.colorScheme.primary),
+              Icon(icon, size: 18, color: _accent),
               const SizedBox(height: 8),
-              Text(label, style: theme.textTheme.labelSmall),
+              Text(
+                label,
+                style: theme.textTheme.labelSmall?.copyWith(color: _textMuted),
+              ),
               Text(
                 value,
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.w800,
+                  color: _textStrong,
                 ),
               ),
             ],
@@ -758,15 +810,15 @@ class _CategoryTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final visual = _categoryVisual(category);
-    final foreground = selected ? Colors.white : theme.colorScheme.onSurface;
+    final foreground = selected ? Colors.white : _textStrong;
 
     return Material(
       color: selected
-          ? visual.color
-          : theme.colorScheme.surface.withValues(alpha: 0.96),
+          ? visual.color.withValues(alpha: 0.92)
+          : _panelElevated.withValues(alpha: 0.9),
       borderRadius: BorderRadius.circular(16),
-      elevation: selected ? 3 : 0,
-      shadowColor: visual.color.withValues(alpha: 0.24),
+      elevation: selected ? 6 : 0,
+      shadowColor: visual.color.withValues(alpha: 0.45),
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(16),
@@ -777,8 +829,8 @@ class _CategoryTile extends StatelessWidget {
               DecoratedBox(
                 decoration: BoxDecoration(
                   color: selected
-                      ? Colors.white.withValues(alpha: 0.18)
-                      : visual.color.withValues(alpha: 0.12),
+                      ? Colors.white.withValues(alpha: 0.16)
+                      : visual.color.withValues(alpha: 0.18),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: SizedBox(
@@ -812,7 +864,7 @@ class _CategoryTile extends StatelessWidget {
                       style: theme.textTheme.labelMedium?.copyWith(
                         color: selected
                             ? Colors.white.withValues(alpha: 0.84)
-                            : theme.colorScheme.onSurfaceVariant,
+                            : _textMuted,
                       ),
                     ),
                   ],
@@ -894,14 +946,19 @@ class _QuestionCard extends StatelessWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: theme.colorScheme.surface.withValues(alpha: 0.98),
+        color: _panel.withValues(alpha: 0.96),
         borderRadius: BorderRadius.circular(22),
-        border: Border.all(color: theme.colorScheme.outlineVariant),
+        border: Border.all(color: _line),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.08),
-            blurRadius: 30,
+            color: Colors.black.withValues(alpha: 0.48),
+            blurRadius: 34,
             offset: const Offset(0, 16),
+          ),
+          BoxShadow(
+            color: visual.color.withValues(alpha: 0.12),
+            blurRadius: 42,
+            offset: const Offset(0, 10),
           ),
         ],
       ),
@@ -912,7 +969,7 @@ class _QuestionCard extends StatelessWidget {
           children: [
             DecoratedBox(
               decoration: BoxDecoration(
-                color: visual.color.withValues(alpha: 0.12),
+                color: visual.color.withValues(alpha: 0.16),
                 border: Border(left: BorderSide(color: visual.color, width: 7)),
               ),
               child: Padding(
@@ -954,6 +1011,7 @@ class _QuestionCard extends StatelessWidget {
                       height: 1.24,
                       fontWeight: FontWeight.w800,
                       letterSpacing: 0,
+                      color: _textStrong,
                     ),
                   ),
                   const SizedBox(height: 24),
@@ -1043,17 +1101,17 @@ class _ChoiceButton extends StatelessWidget {
     final isWrongSelection =
         showAnswer && choice.label == selectedChoiceLabel && !isCorrect;
     final stateColor = isCorrect
-        ? const Color(0xFF2A9D8F)
+        ? _accent
         : isWrongSelection
-        ? theme.colorScheme.error
-        : theme.colorScheme.outlineVariant;
+        ? _danger
+        : _line;
 
     return Material(
       color: isCorrect
-          ? const Color(0xFF2A9D8F).withValues(alpha: 0.12)
+          ? _accent.withValues(alpha: 0.14)
           : isWrongSelection
-          ? theme.colorScheme.errorContainer.withValues(alpha: 0.72)
-          : theme.colorScheme.surface,
+          ? _danger.withValues(alpha: 0.14)
+          : _panelElevated.withValues(alpha: 0.9),
       borderRadius: BorderRadius.circular(16),
       child: InkWell(
         onTap: showAnswer ? null : onTap,
@@ -1091,7 +1149,10 @@ class _ChoiceButton extends StatelessWidget {
                 Expanded(
                   child: Text(
                     choice.text,
-                    style: theme.textTheme.titleMedium?.copyWith(height: 1.3),
+                    style: theme.textTheme.titleMedium?.copyWith(
+                      height: 1.3,
+                      color: _textStrong,
+                    ),
                   ),
                 ),
                 if (isCorrect || isWrongSelection) ...[
@@ -1136,10 +1197,10 @@ class _AnswerPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final color = correct == null
-        ? const Color(0xFF457B9D)
+        ? _accentBlue
         : correct!
-        ? const Color(0xFF2A9D8F)
-        : theme.colorScheme.error;
+        ? _accent
+        : _danger;
     final label = correct == null
         ? 'Answer'
         : correct!
@@ -1148,9 +1209,9 @@ class _AnswerPanel extends StatelessWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.12),
+        color: color.withValues(alpha: 0.13),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: color.withValues(alpha: 0.42)),
+        border: Border.all(color: color.withValues(alpha: 0.5)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -1180,7 +1241,10 @@ class _AnswerPanel extends StatelessWidget {
                   const SizedBox(height: 4),
                   SelectableText(
                     answer,
-                    style: theme.textTheme.titleMedium?.copyWith(height: 1.32),
+                    style: theme.textTheme.titleMedium?.copyWith(
+                      height: 1.32,
+                      color: _textStrong,
+                    ),
                   ),
                 ],
               ),
@@ -1209,9 +1273,9 @@ class _InfoChip extends StatelessWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: theme.colorScheme.surface.withValues(alpha: 0.82),
+        color: _panelElevated.withValues(alpha: 0.78),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: color.withValues(alpha: 0.22)),
+        border: Border.all(color: color.withValues(alpha: 0.34)),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 7),
@@ -1224,6 +1288,7 @@ class _InfoChip extends StatelessWidget {
               label,
               style: theme.textTheme.labelMedium?.copyWith(
                 fontWeight: FontWeight.w700,
+                color: _textStrong,
               ),
             ),
           ],
@@ -1257,24 +1322,20 @@ class _EmptyQuestionState extends StatelessWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: theme.colorScheme.surface.withValues(alpha: 0.96),
+        color: _panel.withValues(alpha: 0.96),
         borderRadius: BorderRadius.circular(22),
-        border: Border.all(color: theme.colorScheme.outlineVariant),
+        border: Border.all(color: _line),
       ),
       child: Padding(
         padding: const EdgeInsets.all(28),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(
-              Icons.search_off,
-              size: 40,
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
+            Icon(Icons.search_off, size: 40, color: _textMuted),
             const SizedBox(height: 12),
             Text(
               'No questions match this filter.',
-              style: theme.textTheme.titleMedium,
+              style: theme.textTheme.titleMedium?.copyWith(color: _textStrong),
             ),
           ],
         ),
@@ -1294,35 +1355,32 @@ _CategoryVisual _categoryVisual(String category) {
   return switch (category) {
     'Life Science' => const _CategoryVisual(
       icon: Icons.biotech,
-      color: Color(0xFF2D7D46),
+      color: Color(0xFF43D17A),
     ),
     'Physical Science' => const _CategoryVisual(
       icon: Icons.science,
-      color: Color(0xFF006D77),
+      color: Color(0xFF2DD4D7),
     ),
     'Earth Science' => const _CategoryVisual(
       icon: Icons.terrain,
-      color: Color(0xFF8A5A44),
+      color: Color(0xFFE0905D),
     ),
     'Earth and Space' => const _CategoryVisual(
       icon: Icons.public,
-      color: Color(0xFF3A6EA5),
+      color: Color(0xFF74A7FF),
     ),
-    'Energy' => const _CategoryVisual(
-      icon: Icons.bolt,
-      color: Color(0xFFC77800),
-    ),
+    'Energy' => const _CategoryVisual(icon: Icons.bolt, color: _warning),
     'Math' => const _CategoryVisual(
       icon: Icons.calculate,
-      color: Color(0xFF6D5BD0),
+      color: Color(0xFFB08CFF),
     ),
     'General Science' => const _CategoryVisual(
       icon: Icons.hub,
-      color: Color(0xFFD45D4C),
+      color: Color(0xFFFF7A66),
     ),
     _ => const _CategoryVisual(
       icon: Icons.all_inclusive,
-      color: Color(0xFF116466),
+      color: Color(0xFF2EE6A6),
     ),
   };
 }
