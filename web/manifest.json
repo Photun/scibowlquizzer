@@ -1,11 +1,11 @@
 {
-    "name": "scibowlquizzer",
-    "short_name": "scibowlquizzer",
+    "name": "SciBowl Quizzer",
+    "short_name": "SciBowl",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#071018",
+    "theme_color": "#2EE6A6",
+    "description": "Dark-mode Science Bowl practice for fast quiz review.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
