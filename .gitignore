@@ -2,6 +2,7 @@
 *.class
 *.log
 firebase-debug.log
+.firebase/
 *.pyc
 *.swp
 .DS_Store
